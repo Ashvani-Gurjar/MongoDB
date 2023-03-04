@@ -17,9 +17,9 @@ app.use(express.json());  // this is used for postman
 app.use(express.urlencoded({ extended: false })); // for use google json gets
 
 
-console.log(process.env.SECRET_KEY)// no-one can see this when used .env
+console.log(process.env.SECRET_KEY)// no-one can see this when used .env 
 
-//serving public file
+//serving public file which is store in public folder
 const public_path = path.join(__dirname, "../public");
 app.use(express.static(public_path));
 
